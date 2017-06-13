@@ -1,0 +1,18 @@
+<!--The whole content below can be removed with the new code.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+</div>
+<div style="text-align: center">
+  <button (click)="login()">Click Me to login!</button>
+  <br/>
+  <button (click)="userinfo()">Click me to get userinfo</button>
+  <br/>
+  <div *ngIf="currentUser">
+  GSU Panther ID Loaded: {{currentUser.profile.gsupersonpantherid}}
+  </div>
+
+  <br/>
+  <button (click)="logout()">Click me to log out</button>
+</div>
